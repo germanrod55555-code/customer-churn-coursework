@@ -1,0 +1,21 @@
+Iranian Churn [Dataset]. (2020). UCI Machine Learning Repository.
+DOI: https://doi.org/10.24432/C5JW3Z
+Страница: https://archive.ics.uci.edu/dataset/563/iranian+churn+dataset
+Архив: https://archive.ics.uci.edu/static/public/563/iranian+churn+dataset.zip
+Дата получения: 15.11.2026.
+
+Лицензия: Creative Commons Attribution 4.0 International (CC BY 4.0).
+Условия: https://creativecommons.org/licenses/by/4.0/
+Разрешены распространение и адаптация с указанием источника и изменений.
+UCI и авторы исходного набора не заявляли об одобрении этого проекта.
+
+customer_churn.csv — исходные байты файла Customer Churn.csv из архива UCI;
+изменено только имя файла, значения и заголовки сохранены.
+SHA-256: 90d5fb6bd1630cd4de4b4d28fcf8b4cb92a8f6ab7484605b0799d47386f7dbe1
+
+В программе названия колонок нормализуются по пробелам, полные дубликаты
+удаляются. Используются девять признаков. Из модели исключены Status,
+Customer Value, Age, Age Group. Источник описывает первые девять месяцев
+как окно признаков, конец двенадцатого месяца — как момент метки Churn.
+example_customers.csv — десять строк теста без метки, производный пример.
+Файлы нагрузочного эксперимента временно формируются повторением профилей.

@@ -1,0 +1,29 @@
+test_bad_numeric_rejected (test_churn.ChurnTests.test_bad_numeric_rejected) ... ok
+test_both_classes_in_every_split (test_churn.ChurnTests.test_both_classes_in_every_split) ... ok
+test_column_order_not_significant (test_churn.ChurnTests.test_column_order_not_significant) ... ok
+test_csv_parquet_batches_match (test_churn.ChurnTests.test_csv_parquet_batches_match) ... ok
+test_duplicate_normalized_names_rejected (test_churn.ChurnTests.test_duplicate_normalized_names_rejected) ... ok
+test_infinite_value_rejected (test_churn.ChurnTests.test_infinite_value_rejected) ... ok
+test_missing_and_unseen_category_supported (test_churn.ChurnTests.test_missing_and_unseen_category_supported) ... ok
+test_missing_column_rejected (test_churn.ChurnTests.test_missing_column_rejected) ... ok
+test_negative_value_rejected (test_churn.ChurnTests.test_negative_value_rejected) ... ok
+test_no_group_overlap (test_churn.ChurnTests.test_no_group_overlap) ... ok
+test_refuse_overwrite_and_invalid_batch (test_churn.ChurnTests.test_refuse_overwrite_and_invalid_batch) ... ok
+test_scaler_fitted_only_train (test_churn.ChurnTests.test_scaler_fitted_only_train) ... ok
+test_serialization_preserves_predictions (test_churn.ChurnTests.test_serialization_preserves_predictions) ... ok
+test_source_shape_and_dedup (test_churn.ChurnTests.test_source_shape_and_dedup) ... ok
+test_split_partition (test_churn.ChurnTests.test_split_partition) ... ok
+test_split_reproducible (test_churn.ChurnTests.test_split_reproducible) ... ok
+test_target_and_status_excluded (test_churn.ChurnTests.test_target_and_status_excluded) ... ok
+test_threshold_selection_known_case (test_churn.ChurnTests.test_threshold_selection_known_case) ... ok
+test_bad_files_are_rejected (test_web.WebTests.test_bad_files_are_rejected) ... ok
+test_foreign_origin_is_rejected (test_web.WebTests.test_foreign_origin_is_rejected) ... ok
+test_header_only_is_valid (test_web.WebTests.test_header_only_is_valid) ... ok
+test_http_prediction_and_download (test_web.WebTests.test_http_prediction_and_download) ... ok
+test_parquet_same_as_csv (test_web.WebTests.test_parquet_same_as_csv) ... ok
+test_same_as_saved_cli_example (test_web.WebTests.test_same_as_saved_cli_example) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 3.051s
+
+OK

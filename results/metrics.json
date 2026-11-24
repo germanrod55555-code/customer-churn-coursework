@@ -1,0 +1,193 @@
+{
+  "seed": 42,
+  "audit": {
+    "raw_rows": 3150,
+    "clean_rows": 2850,
+    "exact_duplicates_removed": 300,
+    "missing_values": 0,
+    "raw_churn": 495,
+    "clean_churn": 446,
+    "unique_profiles": 2785,
+    "conflicting_profiles": 18,
+    "sha256": "90d5fb6bd1630cd4de4b4d28fcf8b4cb92a8f6ab7484605b0799d47386f7dbe1",
+    "features": [
+      "Call Failure",
+      "Subscription Length",
+      "Charge Amount",
+      "Seconds of Use",
+      "Frequency of use",
+      "Frequency of SMS",
+      "Distinct Called Numbers",
+      "Complains",
+      "Tariff Plan"
+    ],
+    "excluded": [
+      "Status",
+      "Customer Value",
+      "Age",
+      "Age Group"
+    ]
+  },
+  "splits": {
+    "train": {
+      "rows": 1707,
+      "churn": 266,
+      "profiles": 1664
+    },
+    "validation": {
+      "rows": 572,
+      "churn": 90,
+      "profiles": 561
+    },
+    "test": {
+      "rows": 571,
+      "churn": 90,
+      "profiles": 560
+    }
+  },
+  "model_comparison": [
+    {
+      "model": "dummy",
+      "cv_ap": 0.15582823036121127,
+      "cv_std": 0.0006452432301209732,
+      "validation_ap": 0.15734265734265734,
+      "validation_roc_auc": 0.5,
+      "fit_seconds": 0.06544340000255033,
+      "best_params": {}
+    },
+    {
+      "model": "logistic",
+      "cv_ap": 0.7385800403177205,
+      "cv_std": 0.02153480033758206,
+      "validation_ap": 0.7441140725421563,
+      "validation_roc_auc": 0.9279737206085754,
+      "fit_seconds": 0.27982989995507523,
+      "best_params": {
+        "model__C": 1.0,
+        "model__class_weight": null
+      }
+    },
+    {
+      "model": "forest",
+      "cv_ap": 0.8822782847465248,
+      "cv_std": 0.030809676244718212,
+      "validation_ap": 0.8498879355983332,
+      "validation_roc_auc": 0.9555670816044259,
+      "fit_seconds": 5.3167384000262246,
+      "best_params": {
+        "model__class_weight": null,
+        "model__max_depth": null,
+        "model__min_samples_leaf": 2
+      }
+    },
+    {
+      "model": "boosting",
+      "cv_ap": 0.9116205907542291,
+      "cv_std": 0.03563309174889874,
+      "validation_ap": 0.8785904233106203,
+      "validation_roc_auc": 0.9658713692946058,
+      "fit_seconds": 0.9777934000012465,
+      "best_params": {
+        "model__l2_regularization": 1.0,
+        "model__max_leaf_nodes": 15
+      }
+    }
+  ],
+  "winner": "boosting",
+  "threshold": 0.05,
+  "threshold_rule": "max validation F2; tie: larger threshold",
+  "test": {
+    "ap": 0.9002897492125482,
+    "roc_auc": 0.9741741741741741,
+    "precision": 0.5906040268456376,
+    "recall": 0.9777777777777777,
+    "f1": 0.7364016736401674,
+    "f2": 0.8644400785854617,
+    "accuracy": 0.8896672504378283,
+    "brier": 0.045690772589529104,
+    "confusion": [
+      [
+        420,
+        61
+      ],
+      [
+        2,
+        88
+      ]
+    ]
+  },
+  "test_at_05": {
+    "ap": 0.9002897492125482,
+    "roc_auc": 0.9741741741741741,
+    "precision": 0.8227848101265823,
+    "recall": 0.7222222222222222,
+    "f1": 0.7692307692307693,
+    "f2": 0.7403189066059226,
+    "accuracy": 0.9316987740805605,
+    "brier": 0.045690772589529104,
+    "confusion": [
+      [
+        467,
+        14
+      ],
+      [
+        25,
+        65
+      ]
+    ]
+  },
+  "dummy_test": {
+    "ap": 0.15761821366024517,
+    "roc_auc": 0.5,
+    "precision": 0.0,
+    "recall": 0.0,
+    "f1": 0.0,
+    "f2": 0.0,
+    "accuracy": 0.8423817863397548,
+    "brier": 0.13277791388424562,
+    "confusion": [
+      [
+        481,
+        0
+      ],
+      [
+        90,
+        0
+      ]
+    ]
+  },
+  "bootstrap_95": {
+    "ap": [
+      0.8476445131158259,
+      0.9407401570544174
+    ],
+    "roc_auc": [
+      0.9575096148919884,
+      0.9863831412061232
+    ],
+    "recall": [
+      0.9436553281955886,
+      1.0
+    ],
+    "precision": [
+      0.5154968944099378,
+      0.6643835616438356
+    ],
+    "f1": [
+      0.6730603448275863,
+      0.7918646048727861
+    ]
+  },
+  "bootstrap_repeats": 1000,
+  "versions": {
+    "python": "3.12.14",
+    "numpy": "2.5.4",
+    "pandas": "3.0.1",
+    "sklearn": "1.9.1",
+    "pyarrow": "26.0.1"
+  },
+  "environment": {
+    "system": "Windows-11-10.0.26300-SP0",
+    "processor": "Intel64 Family 6 Model 191 Stepping 2, GenuineIntel"
+  }
+}

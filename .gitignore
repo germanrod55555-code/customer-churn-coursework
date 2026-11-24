@@ -1,0 +1,7 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.partial
+results_new/
+figures_new/
+notebook_run/

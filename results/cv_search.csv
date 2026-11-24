@@ -1,0 +1,20 @@
+model,params,cv_ap,cv_std
+dummy,{},0.15582823036121127,0.0006452432301209732
+logistic,"{""model__C"": 0.1, ""model__class_weight"": null}",0.7322590438300202,0.0205269736911209
+logistic,"{""model__C"": 0.1, ""model__class_weight"": ""balanced""}",0.7234790595467949,0.026830748383643008
+logistic,"{""model__C"": 1.0, ""model__class_weight"": null}",0.7385800403177205,0.02153480033758206
+logistic,"{""model__C"": 1.0, ""model__class_weight"": ""balanced""}",0.730978923061176,0.027102914151113974
+logistic,"{""model__C"": 10.0, ""model__class_weight"": null}",0.7369711102469467,0.027021729287046308
+logistic,"{""model__C"": 10.0, ""model__class_weight"": ""balanced""}",0.7319873060905143,0.029193446859617847
+forest,"{""model__class_weight"": null, ""model__max_depth"": 8, ""model__min_samples_leaf"": 2}",0.8593636531890353,0.029053909595448343
+forest,"{""model__class_weight"": null, ""model__max_depth"": 8, ""model__min_samples_leaf"": 8}",0.8096886405057093,0.030356704400022014
+forest,"{""model__class_weight"": null, ""model__max_depth"": null, ""model__min_samples_leaf"": 2}",0.8822782847465248,0.030809676244718212
+forest,"{""model__class_weight"": null, ""model__max_depth"": null, ""model__min_samples_leaf"": 8}",0.8183766076248253,0.031103763434744573
+forest,"{""model__class_weight"": ""balanced"", ""model__max_depth"": 8, ""model__min_samples_leaf"": 2}",0.8519000731483427,0.03388950978613629
+forest,"{""model__class_weight"": ""balanced"", ""model__max_depth"": 8, ""model__min_samples_leaf"": 8}",0.8136438899594932,0.03395103575194388
+forest,"{""model__class_weight"": ""balanced"", ""model__max_depth"": null, ""model__min_samples_leaf"": 2}",0.8752743441131302,0.036318039238765684
+forest,"{""model__class_weight"": ""balanced"", ""model__max_depth"": null, ""model__min_samples_leaf"": 8}",0.8217930712789415,0.03484257875790734
+boosting,"{""model__l2_regularization"": 1.0, ""model__max_leaf_nodes"": 7}",0.897633462046674,0.02962418082926206
+boosting,"{""model__l2_regularization"": 1.0, ""model__max_leaf_nodes"": 15}",0.9116205907542291,0.03563309174889874
+boosting,"{""model__l2_regularization"": 5.0, ""model__max_leaf_nodes"": 7}",0.8787925515591238,0.03460634815542862
+boosting,"{""model__l2_regularization"": 5.0, ""model__max_leaf_nodes"": 15}",0.897010236526458,0.03504046933482846
